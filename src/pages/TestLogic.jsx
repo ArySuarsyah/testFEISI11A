@@ -67,7 +67,7 @@ export default function TestLogic() {
     numbers.reduce((sum, num) => sum + num, 0) / numbers.length || 0;
 
   return (
-    <div>
+    <div className="flex flex-col gap-10 p-10">
       <div>
         <h3 className="font-bold text-lg mb-3">Test String Format</h3>
         <form onSubmit={handleSubmit}>
@@ -100,11 +100,11 @@ export default function TestLogic() {
           ))}
         </ul>
       </div>
-      <div className="mb-8">
+      <div className="mb-8 flex flex-col gap-5">
         <h3 className="text-xl font-bold mb-2">
           Deret Pertama, Kedua, dan Ketiga
         </h3>
-        <div>
+        <div className="flex items-center gap-5 ">
           <label>Input n (untuk deret angka):</label>
           <input
             className="h-8 p-5 rounded-md"
@@ -130,7 +130,7 @@ export default function TestLogic() {
       </div>
       <div className="mb-8">
         <h3 className="text-xl font-bold mb-2">Statistik Angka</h3>
-        <div>
+        <div className="flex items-center gap-5 ">
           <label>Input Angka (pisahkan dengan koma):</label>
           <input
             className="h-8 p-5 rounded-md"
