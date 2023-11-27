@@ -68,6 +68,7 @@ export default function TestLogic() {
 
   return (
     <div className="flex flex-col gap-10 p-10">
+      {/* String format */}
       <div>
         <h3 className="font-bold text-lg mb-3">Test String Format</h3>
         <form onSubmit={handleSubmit}>
@@ -90,6 +91,9 @@ export default function TestLogic() {
           <p>Result: {hyphenatedResult}</p>
         </div>
       </div>
+      {/* End String format */}
+
+      {/* Caracter count */}
       <div className="mb-8">
         <h3 className="text-xl font-bold mb-2">Hitung Jumlah Karakter</h3>
         <ul>
@@ -100,6 +104,9 @@ export default function TestLogic() {
           ))}
         </ul>
       </div>
+      {/* End Caracter count */}
+
+{/* Deret */}
       <div className="mb-8 flex flex-col gap-5">
         <h3 className="text-xl font-bold mb-2">
           Deret Pertama, Kedua, dan Ketiga
@@ -128,6 +135,9 @@ export default function TestLogic() {
           </div>
         </div>
       </div>
+      {/* End Deret */}
+
+      {/* Statistik */}
       <div className="mb-8">
         <h3 className="text-xl font-bold mb-2">Statistik Angka</h3>
         <div className="flex items-center gap-5 ">
@@ -144,6 +154,7 @@ export default function TestLogic() {
         <p className="mb-2">Min: {min}</p>
         <p className="mb-2">Rata-rata: {average}</p>
       </div>
+      {/* End */}
     </div>
   );
 }
